@@ -43,6 +43,99 @@
             </li>
           </ul>
         </address>
+
+        <!-- burger menu -->
+        <button class="burger-menu" type="button" data-menu-open>
+          <svg class="icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+
+        <div class="hidden-menu" data-menu>
+          <button
+            class="close-container burger-close-btn"
+            type="button"
+            data-menu-close
+          >
+            <svg width="8" height="8" class="close-icon">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+
+          <nav class="burger-nav-menu">
+            <ul class="burger-nav-list">
+              <li>
+                <a href="./index.html" class="burger-nav-link nav-link"
+                  >Studio</a
+                >
+              </li>
+              <li><a href="" class="burger-nav-link nav-link">Portfolio</a></li>
+              <li><a href="" class="burger-nav-link nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="burger-address-container">
+            <ul class="burger-address-list">
+              <li>
+                <a href="tel:+110001111111" class="address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="burger-social-media-list">
+            <li class="social-media-item">
+              <a
+                class="social-media-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a
+                class="social-media-link"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <svg class="icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a
+                class="social-media-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a
+                class="social-media-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <svg class="icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -116,6 +209,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/productdesigner-x2.jpg 2x, ./images/productdesigner.jpg 1x"
                 src="./images/productdesigner.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -173,6 +267,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/frontenddeveloper-x2.jpg 2x, ./images/frontenddeveloper.jpg 1x"
                 src="./images/frontenddeveloper.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -230,6 +325,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/marketing-x2.jpg 2x, ./images/marketing.jpg 1x"
                 src="./images/marketing.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -287,6 +383,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/uidesigner-x2.jpg 2x, ./images/uidesigner.jpg 1x"
                 src="./images/uidesigner.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -352,6 +449,7 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
+                  srcset="./images/bankingapp-x2.jpg 2x, ./images/bankingapp.jpg 1x"
                   src="./images/bankingapp.jpg"
                   alt="Banking App examples"
                   width="360"
@@ -370,6 +468,7 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
+                  srcset="./images/cashlesspayment-x2.jpg 2x, ./images/cashlesspayment.jpg 1x"
                   src="./images/cashlesspayment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -388,6 +487,7 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
+                  srcset="./images/meditationapp-x2.jpg 2x, ./images/meditationapp.jpg 1x"
                   src="./images/meditationapp.jpg"
                   alt="Meditation App"
                   width="360"
@@ -406,6 +506,7 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
+                  srcset="./images/taxiservice-x2.jpg 2x, ./images/taxiservice.jpg 1x"
                   src="./images/taxiservice.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -424,6 +525,7 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
+                  srcset="./images/screenillustrations-x2.jpg 2x, ./images/screenillustrations.jpg 1x"
                   src="./images/screenillustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -442,6 +544,7 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
+                  srcset="./images/onlinecourses-x2.jpg 2x, ./images/onlinecourses.jpg 1x"
                   src="./images/onlinecourses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -622,9 +725,12 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-
-              I accept the terms and conditions of the
-              <a href="" target="_blank" class="policy-link">Privacy Policy</a>
+              <span
+                >I accept the terms and conditions of the
+                <a href="" target="_blank" class="policy-link"
+                  >Privacy Policy</a
+                ></span
+              >
             </label>
           </div>
 
@@ -632,7 +738,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
