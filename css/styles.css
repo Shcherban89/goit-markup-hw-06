@@ -52,9 +52,11 @@ button {
 @media screen and (min-width: 768px) {
   .team-container .container,
   .portfolio-container .container,
-  .advantages-container .container,
-  .adves-container .container {
+  .advantages-container .container {
     width: 768px;
+  }
+  .adves-container .container {
+    width: 552px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -106,7 +108,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  padding: 48px 24px 40px 16px;
+  padding: 72px 16px 40px 16px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -129,7 +131,6 @@ button {
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin-top: 8px;
 }
 
 .logo {
@@ -156,6 +157,9 @@ button {
   flex-direction: column;
   gap: 40px;
 }
+.current {
+  color: #404bbf;
+}
 @media screen and (min-width: 768px) {
   .header-container .burger-menu,
   .header-container .hidden-menu {
@@ -163,6 +167,9 @@ button {
   }
   .logo {
     margin-right: 120px;
+  }
+  .adves-logo-text .logo {
+    margin-right: 0;
   }
   .header-container .menu-list {
     display: flex;
@@ -196,10 +203,6 @@ button {
     bottom: -1px;
     left: 0;
   }
-  .current {
-    color: #404bbf;
-  }
-
   .address-container .address-link {
     color: var(--slate, #434455);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -254,11 +257,14 @@ button {
 .address-container {
   font-style: normal;
 }
+.burger-address-container {
+  display: block;
+  margin-bottom: 48px;
+}
 .burger-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 .burger-address-list .address-link {
   font-size: 20px;
@@ -267,6 +273,10 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.burger-address-list .tel-style {
+  color: #4d5ae5;
+}
+
 .burger-nav-link:focus {
   color: #404bbf;
 }
@@ -281,7 +291,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/peopleoffice.jpg);
+    url(../images/peopleoffice-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
@@ -380,7 +390,7 @@ button {
   font-weight: 500;
 }
 .advantages-item:not(:last-child),
-.team-item {
+.team-item:not(:last-child) {
   margin-bottom: 72px;
 }
 .portfolio-item:not(:last-child) {
@@ -422,7 +432,6 @@ button {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    text-align: left;
   }
   .advantages-text {
     font-weight: 400;
@@ -498,6 +507,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .advantages-item-title {
+    text-align: left;
+  }
   .advantages-list,
   .team-list,
   .portfolio-list {
@@ -517,7 +529,7 @@ button {
     flex-basis: calc((100% - 24px) / 2);
   }
   .advantages-item:not(:last-child),
-  .team-item {
+  .team-item:not(:last-child) {
     margin-bottom: 0;
   }
   .portfolio-item:not(:last-child) {
@@ -635,10 +647,11 @@ button {
   margin-bottom: 16px;
   text-align: center;
 }
+
 .footer-form {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  gap: 16px;
 }
 .form-mail {
   width: 288px;
@@ -653,7 +666,6 @@ button {
   padding-right: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #ffffff;
-  margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .adves-container .container {
@@ -662,7 +674,6 @@ button {
     align-items: baseline;
     flex-wrap: wrap;
     gap: 24px;
-    margin-left: 108px;
   }
   .adves-text {
     width: 264px;
@@ -673,11 +684,11 @@ button {
   }
   .footer-form {
     flex-direction: row;
+    gap: 24px;
   }
   .form-mail {
     width: 264px;
     margin-bottom: 0;
-    margin-right: 24px;
   }
   .adves-logo-text {
     text-align: left;
@@ -927,9 +938,51 @@ textarea::placeholder {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  .order-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice-mobile-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .order-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice-tablet.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .order-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice-tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .order-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
   .order-container {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),

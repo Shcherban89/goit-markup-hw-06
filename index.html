@@ -51,7 +51,7 @@
           </svg>
         </button>
 
-        <div class="hidden-menu" data-menu>
+        <div class="hidden-menu is-hidden" data-menu>
           <button
             class="close-container burger-close-btn"
             type="button"
@@ -65,7 +65,7 @@
           <nav class="burger-nav-menu">
             <ul class="burger-nav-list">
               <li>
-                <a href="./index.html" class="burger-nav-link nav-link"
+                <a href="./index.html" class="burger-nav-link nav-link current"
                   >Studio</a
                 >
               </li>
@@ -74,68 +74,68 @@
             </ul>
           </nav>
           <div>
-          <address class="burger-address-container">
-            <ul class="burger-address-list">
-              <li>
-                <a href="tel:+110001111111" class="address-link"
-                  >+11 (000) 111-11-11</a
+            <address class="burger-address-container">
+              <ul class="burger-address-list">
+                <li>
+                  <a href="tel:+110001111111" class="address-link tel-style"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="address-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="burger-social-media-list">
+              <li class="social-media-item">
+                <a
+                  class="social-media-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
                 >
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="address-link"
-                  >info@devstudio.com</a
+              <li class="social-media-item">
+                <a
+                  class="social-media-link"
+                  href="https://twitter.com/"
+                  target="_blank"
                 >
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  class="social-media-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item">
+                <a
+                  class="social-media-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-
-          <ul class="burger-social-media-list">
-            <li class="social-media-item">
-              <a
-                class="social-media-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-              >
-                <svg class="icon-social" width="16" height="16">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                class="social-media-link"
-                href="https://twitter.com/"
-                target="_blank"
-              >
-                <svg class="icon-social" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                class="social-media-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-              >
-                <svg class="icon-social" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a
-                class="social-media-link"
-                href="https://www.linkedin.com/"
-                target="_blank"
-              >
-                <svg class="icon-social" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
       </div>
     </header>
@@ -210,7 +210,10 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                srcset="./images/productdesigner-x2.jpg 2x, ./images/productdesigner.jpg 1x"
+                srcset="
+                  ./images/productdesigner-x2.jpg 2x,
+                  ./images/productdesigner.jpg    1x
+                "
                 src="./images/productdesigner.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -268,7 +271,10 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/frontenddeveloper-x2.jpg 2x, ./images/frontenddeveloper.jpg 1x"
+                srcset="
+                  ./images/frontenddeveloper-x2.jpg 2x,
+                  ./images/frontenddeveloper.jpg    1x
+                "
                 src="./images/frontenddeveloper.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -384,7 +390,10 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/uidesigner-x2.jpg 2x, ./images/uidesigner.jpg 1x"
+                srcset="
+                  ./images/uidesigner-x2.jpg 2x,
+                  ./images/uidesigner.jpg    1x
+                "
                 src="./images/uidesigner.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -450,10 +459,17 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
-                  srcset="./images/bankingapp-x2.jpg 2x, ./images/bankingapp.jpg 1x"
+                  srcset="
+                    ./images/bankingapp.jpg           360w,
+                    ./images/bankingapp-2x.jpg        720w,
+                    ./images/bankingapp-tablet.jpg    356w,
+                    ./images/bankingapp-tablet-2x.jpg 712w,
+                    ./images/bankingapp-mobile.jpg    288w,
+                    ./images/bankingapp-mobile-2x.jpg 576w
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
                   src="./images/bankingapp.jpg"
                   alt="Banking App examples"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -469,10 +485,17 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
-                  srcset="./images/cashlesspayment-x2.jpg 2x, ./images/cashlesspayment.jpg 1x"
+                  srcset="
+                    ./images/cashlesspayment.jpg           360w,
+                    ./images/cashlesspayment-x2.jpg        720w,
+                    ./images/cashlesspayment-tablet.jpg    356w,
+                    ./images/cashlesspayment-tablet-2x.jpg 712w,
+                    ./images/cashlesspayment-mobile.jpg    288w,
+                    ./images/cashlesspayment-mobile-2x.jpg 576w
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
                   src="./images/cashlesspayment.jpg"
                   alt="Cashless Payment"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -488,10 +511,17 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
-                  srcset="./images/meditationapp-x2.jpg 2x, ./images/meditationapp.jpg 1x"
+                  srcset="
+                    ./images/meditationapp.jpg           360w,
+                    ./images/meditationapp-x2.jpg        720w,
+                    ./images/meditationapp-tablet.jpg    356w,
+                    ./images/meditationapp-tablet-2x.jpg 712w,
+                    ./images/meditationapp-mobile.jpg    288w,
+                    ./images/meditationapp-mobile-2x.jpg 576w
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
                   src="./images/meditationapp.jpg"
                   alt="Meditation App"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -507,10 +537,17 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
-                  srcset="./images/taxiservice-x2.jpg 2x, ./images/taxiservice.jpg 1x"
+                  srcset="
+                    ./images/taxiservice.jpg           360w,
+                    ./images/taxiservice-x2.jpg        720w,
+                    ./images/taxiservice-tablet.jpg    356w,
+                    ./images/taxiservice-tablet-2x.jpg 712w,
+                    ./images/taxiservice-mobile.jpg    288w,
+                    ./images/taxiservice-mobile-2x.jpg 576w
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
                   src="./images/taxiservice.jpg"
                   alt="Taxi Service"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -526,10 +563,17 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
-                  srcset="./images/screenillustrations-x2.jpg 2x, ./images/screenillustrations.jpg 1x"
+                  srcset="
+                    ./images/screenillustrations.jpg           360w,
+                    ./images/screenillustrations-x2.jpg        720w,
+                    ./images/screenillustrations-tablet.jpg    356w,
+                    ./images/screenillustrations-tablet-2x.jpg 712w,
+                    ./images/screenillustrations-mobile.jpg    288w,
+                    ./images/screenillustrations-mobile-2x.jpg 576w
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
                   src="./images/screenillustrations.jpg"
                   alt="Screen Illustrations"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -545,10 +589,17 @@
             <li class="portfolio-item">
               <div class="portfolio-item-pic">
                 <img
-                  srcset="./images/onlinecourses-x2.jpg 2x, ./images/onlinecourses.jpg 1x"
+                  srcset="
+                    ./images/onlinecourses.jpg           360w,
+                    ./images/onlinecourses-x2.jpg        720w,
+                    ./images/onlinecourses-tablet.jpg    356w,
+                    ./images/onlinecourses-tablet-2x.jpg 712w,
+                    ./images/onlinecourses-mobile.jpg    288w,
+                    ./images/onlinecourses-mobile-2x.jpg 576w
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
                   src="./images/onlinecourses.jpg"
                   alt="Online Courses"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -647,7 +698,7 @@
       </div>
     </footer>
 
-    <div class="overlay-modal" data-modal>
+    <div class="overlay-modal is-hidden" data-modal>
       <div class="form-container">
         <button class="close-container" type="button" data-modal-close>
           <svg width="8" height="8" class="close-icon">
