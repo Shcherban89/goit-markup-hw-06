@@ -157,6 +157,7 @@ button {
   flex-direction: column;
   gap: 40px;
 }
+.burger-nav-list .current,
 .nav-list .current {
   color: #404bbf;
 }
